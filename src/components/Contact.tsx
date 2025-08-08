@@ -27,10 +27,10 @@ const Contact: React.FC = () => {
       };
 
       await emailjs.send(
-        'YOUR_SERVICE_ID', // You'll need to replace this
-        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        'service_7evuxig', // You'll need to replace this
+        'template_0bj51dr', // You'll need to replace this
         templateParams,
-        'YOUR_PUBLIC_KEY' // You'll need to replace this
+        'Gt5xeCGHwL6sMEOjA' // You'll need to replace this
       );
 
       setIsSubmitted(true);
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get In Touch</h3>
-            
+
             <div className="space-y-6 mb-8">
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
                   <div className="text-gray-600">quillsstrok.ai@gmail.com</div>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                   <Phone className="h-6 w-6 text-blue-600" />
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
                   <div className="text-gray-600">+91 9532340629</div>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                   <MapPin className="h-6 w-6 text-blue-600" />
@@ -175,11 +175,10 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitted || isLoading}
-                className={`w-full py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 ${
-                  isSubmitted || isLoading
-                    ? 'bg-green-600 text-white'
-                    : 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:scale-105'
-                }`}
+                className={`w-full py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 ${isSubmitted || isLoading
+                  ? 'bg-green-600 text-white'
+                  : 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:scale-105'
+                  }`}
               >
                 {isLoading ? (
                   <span className="flex items-center justify-center">
@@ -198,7 +197,7 @@ const Contact: React.FC = () => {
                   </span>
                 )}
               </button>
-              
+
               <p className="text-sm text-gray-500 text-center mt-4">
                 Your message will be sent directly to our team at quillsstrok.ai@gmail.com
               </p>
