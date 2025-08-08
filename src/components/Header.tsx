@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-
+import logo from '../../public/d52a60b1-ab55-4bb7-a4c6-1bb9e1b5581e.jpeg'
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <img src='../../public/d52a60b1-ab55-4bb7-a4c6-1bb9e1b5581e.jpeg' className="h-12 w-12 rounded-lg text-blue-600" />
+            <img src={logo} className="h-12 w-12 rounded-lg text-blue-600" />
             <span className="text-xl font-bold text-gray-900">Quills AI</span>
           </div>
 
