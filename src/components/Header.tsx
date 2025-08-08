@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Bot } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,16 +22,15 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
-    }`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <Bot className="h-8 w-8 text-blue-600" />
+            <img src='../../public/d52a60b1-ab55-4bb7-a4c6-1bb9e1b5581e.jpeg' className="h-12 w-12 rounded-lg text-blue-600" />
             <span className="text-xl font-bold text-gray-900">Quills AI</span>
           </div>
-          
+
           <nav className="hidden md:flex space-x-8">
             {['services', 'about', 'portfolio', 'contact'].map((item) => (
               <button
