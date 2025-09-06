@@ -1,6 +1,6 @@
 import React from 'react';
-import { Bot, Mail, Phone, MapPin } from 'lucide-react';
-
+import { Mail, Phone, MapPin } from 'lucide-react';
+import logo from '../../public/d52a60b1-ab55-4bb7-a4c6-1bb9e1b5581e.jpeg'
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-16">
@@ -8,11 +8,12 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Bot className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">Quills AI</span>
+
+              <img src={logo} className="h-12 w-12 rounded-lg text-blue-600" />
+              <span className="text-2xl font-bold">Quills Stroke AI</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Transforming businesses through intelligent automation and AI-powered solutions. 
+              Transforming businesses through intelligent automation and AI-powered solutions.
               We help organizations harness the power of artificial intelligence to drive growth and innovation.
             </p>
             <div className="space-y-2">

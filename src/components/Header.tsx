@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <img src={logo} className="h-12 w-12 rounded-lg text-blue-600" />
-            <span className="text-xl font-bold text-gray-900">Quills AI</span>
+            <span className="text-xl font-bold text-gray-900">Quills Stroke AI</span>
           </div>
 
           <nav className="hidden md:flex space-x-8">
